@@ -1,1 +1,33 @@
-
+Praktikum Cloud UNRIYO - NIM 24231006
+Server dibuat: Tue Nov 10 02:00:30 UTC 2026
+    1  cd ~
+    2  cat /etc/os-release
+    3  hostname
+    4  whoami
+    5  nproc
+    6  free -h
+    7  df -h /
+    8  pwd
+    9  ls -la
+   10  cd /
+   11  ls
+   12  cd ~
+   13  mkdir -p /tmp/praktikum
+   14  cd /tmp/praktikum
+   15  echo Praktikum Cloud UNRIYO - NIM 24231006 | tee identitas.txt
+   16  echo Server dibuat: $(date) | tee -a identitas.txt
+   17  cat identitas.txt
+   18  cp identitas.txt salinan.txt
+   19  mv salinan.txt arsip.txt
+   20  ls -l~
+   21  id tamu
+   22  echo Data rahasia NIM 24231006 | tee rahasia.txt
+   23  chmod 600 rahasia.txt
+   24  ls -l rahasia.txt
+   25  runuser -u tamu -- cat /tmp/praktikum/rahasia.txt
+   26  chmod 644 rahasia.txt
+   27  runuser -u tamu -- cat /tmp/praktikum/rahasia.txt
+   28  history | tee /tmp/praktikum/riwayat.txt
+   29  cat /tmp/praktikum/identitas.txt /tmp/praktikum/riwayat.txt
+   30  ls -l /tmp/praktikum
+   31  history | tee /tmp/praktikum/riwayat.txt
